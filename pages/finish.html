@@ -4,37 +4,72 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Finish</title>
+	<link rel="stylesheet" href="../styles/finish.css">
 </head>
 <body>
 <header>
 	<nav>
-			<a href="../index.html">Заголовки</a>
-			<a href="cms.html">CMS</a>
-			<a href="list.html">Списки</a>
-			<a href="finish.html">Итоговая страница</a>
-			<a href="table.html">Таблица</a>
+		<ul>
+			<li><a href="../index.html">Заголовки</a></li>
+			<li><a href="border.html">Границы</a></li>
+			<li><a href="list.html">Списки</a></li>
+			<li><a href="position.html">Позиционирование</a></li>
+			<li><a href="finish.html">Итоговая страница</a></li>
+		</ul>
 	</nav>
 </header>
-<h1>Что нужно знать, чтобы делать сайты</h1>
-<ol>
-	<li><b>HTML</b></li>
-	<li><i>CSS</i></li>
-	<li>PHP</li>
-	<li>SQL</li>
-	<li>JavaScript</li>
-	<li>jQuery</li>
-	<li>Flash</li>
-	<li>SEO</li>
-</ol>
-<h2>PHP и JavaScript</h2>
-<p>Языки программирования <b>PHP</b> и <b>JavaScript</b> позволяют сделать сайт динамичным, то есть реагирующим на действия пользователя. Например, можно сделать красивую выпадающую менюшку или слайдер</p>
-<h2>Виды скриптов</h2>
-<p> Для этого пишутся скрипты (англ. <i>script</i> - «сценарий») - программы, позволяющиее реагировать на действия пользователя. Скрипты бывают двух видов:
-	<ul>
-		<li>те, которые выполняются на сервере, а результат их выполнения приходит в браузер к пользователю уже в готовом виде. Это скрипты, написанные на языке <b>PHP</b>. На нем пишуться <b>CMS-ки</b> – системы управления контентом.</li>
-		<li>те, которые выполняются прямо в браузере пользователя. Это скрипты, написанные на языке <b>JavaScript</b>. Они чаще всего используются для, того чтобы сделать страницу более удобной и красивой.</li>
-	</ul>
-</p>
-<a href="../index.html"><img src="../images/img1.jpeg" alt="Утка"></a>
+<h1>Таблица</h1>
+<p>Размер таблицы ширина: 400, высота:200. Для отображение границ использовать атрибуты table.</p>
+<p>Для центрирования текста использовать атрибуты.</p>
+<table border="1" style="width: 400px;" style="height: 200px;">
+	<thead>
+		<tr align="center">
+			<th rowspan="2">номер</th>
+			<th colspan="2">теги</th>
+		</tr>
+		<tr align="center">
+			<th>тег</td>
+			<th>значение</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr align="center">
+			<td>1</td>
+			<td>p</td>
+			<td rowspan="4">для текста</td>
+		</tr>
+		<tr align="center">
+			<td>2</td>
+			<td>a</td>
+		</tr>
+		<tr align="center">
+			<td>3</td>
+			<td>b</td>
+		</tr>
+		<tr align="center">
+			<td>4</td>
+			<td>i</td>
+		</tr>
+		<tr align="center">
+			<td>5</td>
+			<td>table</td>
+			<td>таблица</td>
+		</tr>
+		<tr align="center">
+			<td>6</td>
+			<td>tr</td>
+			<td>ряд таблицы</td>
+		</tr>
+		<tr align="center">
+			<td>7</td>
+			<td>td</td>
+			<td rowspan="2">ячейки таблицы</td>
+		</tr>
+		<tr align="center">
+			<td>8</td>
+			<td>th</td>
+		</tr>
+	</tbody>
+</table>
 </body>
 </html>

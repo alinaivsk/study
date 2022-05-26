@@ -1,26 +1,52 @@
 body{
 	background-color: #f9931538;
+	margin: 0;
 	}
-header {background-color: red;}
-a {text-decoration: none;
-	color: greenyellow;}
-li {display: inline-block;
-	margin-right: 30px;
-	text-transform: lowercase;}
-li::before {
-			color: white;
-			background-color: white;
-			content: "";
-			border-radius: 10px;
-			hight: 10px;
-			width: 10px;
+ul{ 
+	background-color: orange;
+	padding: 0;
+	margin: 0;
+	}
+li {
+
+	list-style: none;
+	display: inline-block;
+	}
+a {	
+	position: relative;
+	display: block;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: white;
+	padding: 15px;
+	}
+a::before {
+			position: absolute;
+    		content: '';
+    		height: 10px;
+    		width: 10px;
+    		background-color: white;
+    		border-radius: 100%;
+    		left: 3px;
+    		top: 18px;
+			}
+li:hover{
+		background-color: red;
 		}
-li:hover{background-color: red;}	
+a:hover::before {background-color: green;}
+main {
+		padding: 15px;
+	}
 h1 {font-size: 45px;}
 h2 {text-decoration-line: line-through;}
 h3 {text-decoration-line: underline;}
-h4 {text-transform: uppercase;}
-h5 {text-transform: capitalize;}
-h6 {letter-spacing: 5px;
-	color: blue;}
-span {color: red;}
+.uppercase {text-transform: uppercase;}
+.capitalize {text-transform: capitalize;}
+.spacing {
+			letter-spacing: 5px;
+			color: blue;
+		}
+span {color: red;
+		font-weight: bold;}
+p{width: 80%;
+	font-size: 20px;}
